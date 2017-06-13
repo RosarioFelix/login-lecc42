@@ -19,7 +19,7 @@ Ver el proyecto terminado https://rosariofelix.github.io/login-lecc42/
 
 - Script para cargar el SDK de Facebook
 
-```
+``` sh
 (function(thisdocument,scriptelement,id){
     var js, fjs = thisdocument.getElementsByTagName(scriptelement)[0];
     if(thisdocument.getElementById(id)) return;
@@ -34,7 +34,7 @@ Ver el proyecto terminado https://rosariofelix.github.io/login-lecc42/
   - Dashboard
   - login
   
-``` 
+``` sh
 const Login = () =>{
   const login       = $('<div class = "login"></div>');
   const title       = $('<h1>Log into Laboratoria</h1>');
@@ -43,7 +43,7 @@ const Login = () =>{
 ```
 - Obtener informacion del usuario nombre y email
 
-```
+``` sh
 
 
 function loginHandler(response){
