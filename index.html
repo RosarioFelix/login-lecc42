@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Facebook | Lab</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="192x192" href="http://laboratoria.la/app/assets/img/android-icon-192x192.png">
+</head>
+<body>
+  <div class="root"></div>
+  <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src= "js/components/header.js"></script>
+  <script type="text/javascript" src= "js/components/login.js"></script>
+  <script type="text/javascript" src= "js/components/dashboard.js"></script>
+  <script type="text/javascript" src= "js/utils/facebook.js"></script>
+  <script type="text/javascript" src= "js/index.js"></script>
+  <script>
+  (function(thisdocument,scriptelement,id){
+    var js, fjs = thisdocument.getElementsByTagName(scriptelement)[0];
+    if(thisdocument.getElementById(id)) return;
+
+    js = thisdocument.createElement(scriptelement); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+</html>
